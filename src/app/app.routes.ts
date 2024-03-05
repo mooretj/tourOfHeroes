@@ -6,6 +6,11 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 export const routes: Routes = [
 
     {
+        path: '',
+        redirectTo: 'dashboard',
+        pathMatch: 'full'
+    },
+    {
         path: 'heroes',
         component: HeroesComponent,
         title: 'Heroes'
